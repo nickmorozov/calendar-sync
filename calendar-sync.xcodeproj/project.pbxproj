@@ -14,6 +14,8 @@
 		018CA9052C03B337001B37AF /* calendar_syncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018CA9042C03B337001B37AF /* calendar_syncTests.swift */; };
 		018CA90F2C03B337001B37AF /* calendar_syncUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018CA90E2C03B337001B37AF /* calendar_syncUITests.swift */; };
 		018CA9112C03B337001B37AF /* calendar_syncUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018CA9102C03B337001B37AF /* calendar_syncUITestsLaunchTests.swift */; };
+		018CA91E2C03B37B001B37AF /* EventFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018CA91D2C03B37B001B37AF /* EventFetcher.swift */; };
+		018CA9202C03B395001B37AF /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018CA91F2C03B395001B37AF /* Worker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		018CA90A2C03B337001B37AF /* calendar-syncUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "calendar-syncUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		018CA90E2C03B337001B37AF /* calendar_syncUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendar_syncUITests.swift; sourceTree = "<group>"; };
 		018CA9102C03B337001B37AF /* calendar_syncUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendar_syncUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		018CA91D2C03B37B001B37AF /* EventFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFetcher.swift; sourceTree = "<group>"; };
+		018CA91F2C03B395001B37AF /* Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			children = (
 				018CA8F22C03B334001B37AF /* calendar_syncApp.swift */,
 				018CA8F42C03B334001B37AF /* ContentView.swift */,
+				018CA91D2C03B37B001B37AF /* EventFetcher.swift */,
+				018CA91F2C03B395001B37AF /* Worker.swift */,
 				018CA8F62C03B337001B37AF /* Assets.xcassets */,
 				018CA8FB2C03B337001B37AF /* calendar_sync.entitlements */,
 				018CA8F82C03B337001B37AF /* Preview Content */,
@@ -259,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				018CA91E2C03B37B001B37AF /* EventFetcher.swift in Sources */,
+				018CA9202C03B395001B37AF /* Worker.swift in Sources */,
 				018CA8F52C03B334001B37AF /* ContentView.swift in Sources */,
 				018CA8F32C03B334001B37AF /* calendar_syncApp.swift in Sources */,
 			);
