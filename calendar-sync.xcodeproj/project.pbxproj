@@ -16,6 +16,7 @@
 		018CA9112C03B337001B37AF /* calendar_syncUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018CA9102C03B337001B37AF /* calendar_syncUITestsLaunchTests.swift */; };
 		018CA91E2C03B37B001B37AF /* EventFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018CA91D2C03B37B001B37AF /* EventFetcher.swift */; };
 		018CA9202C03B395001B37AF /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018CA91F2C03B395001B37AF /* Worker.swift */; };
+		018CA9222C03B7E3001B37AF /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018CA9212C03B7E3001B37AF /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		018CA9102C03B337001B37AF /* calendar_syncUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendar_syncUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		018CA91D2C03B37B001B37AF /* EventFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFetcher.swift; sourceTree = "<group>"; };
 		018CA91F2C03B395001B37AF /* Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
+		018CA9212C03B7E3001B37AF /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				018CA8F22C03B334001B37AF /* calendar_syncApp.swift */,
 				018CA8F42C03B334001B37AF /* ContentView.swift */,
 				018CA91D2C03B37B001B37AF /* EventFetcher.swift */,
+				018CA9212C03B7E3001B37AF /* Logger.swift */,
 				018CA91F2C03B395001B37AF /* Worker.swift */,
 				018CA8F62C03B337001B37AF /* Assets.xcassets */,
 				018CA8FB2C03B337001B37AF /* calendar_sync.entitlements */,
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				018CA9222C03B7E3001B37AF /* Logger.swift in Sources */,
 				018CA91E2C03B37B001B37AF /* EventFetcher.swift in Sources */,
 				018CA9202C03B395001B37AF /* Worker.swift in Sources */,
 				018CA8F52C03B334001B37AF /* ContentView.swift in Sources */,
@@ -429,10 +433,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "calendar-sync/calendar_sync.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"calendar-sync/Preview Content\"";
+				DEVELOPMENT_TEAM = 5FNR593BWG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -454,10 +460,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "calendar-sync/calendar_sync.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"calendar-sync/Preview Content\"";
+				DEVELOPMENT_TEAM = 5FNR593BWG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";

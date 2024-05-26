@@ -12,8 +12,14 @@ class EventFetcher {
     private let eventStore = EKEventStore()
 
     func requestAccess(completion: @escaping (Bool, Error?) -> Void) {
-        eventStore.requestAccess(to: .event) { (granted, error) in
-            completion(granted, error)
+        eventStore.requestFullAccessToEvents() { (eventGranted, eventError) in
+            if eventGranted, eventError == nil {
+                self.eventStore.requestFullAccessToReminders() { (reminderGranted, reminderError) in
+                    completion(reminderGranted, reminderError)
+                }
+            } else {
+                completion(eventGranted, eventError)
+            }
         }
     }
 
